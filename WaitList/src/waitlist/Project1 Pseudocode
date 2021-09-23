@@ -1,0 +1,78 @@
+class waitList {
+    Private Variables:
+    Textfields
+        guest names 
+        party size
+        wait time 
+        total wait 
+    Buttons
+        add 
+        showqueue 
+    TextArea
+        showqueue
+    Ints
+        wait Time
+        current Capacity 
+        avg wait
+        # of parties
+
+    Create customer object
+    create queue
+
+start method {
+    create gridpane 
+    fill out grid and add labels
+    
+    edit UI for gridpane
+
+    add button {
+
+    if statement for basic error checking
+        Variables for processing input into customer object
+            guest name
+            number in party
+            total wait
+            avg wait
+
+    create customer object and pass variables
+    add customer info to queue
+    calculate total and avg wait
+
+    repopulate form for next input
+} // end add button
+    
+    show queue button {
+        create result string for printing customer info
+        while statement + .poll() to fill out result
+        print list FIFO to text area 
+} // end queue button
+} // end start method
+} // end class waitlist
+
+class Customer {
+    private variables
+        party Size
+        wait time  
+        total wait
+        current capacity
+        avg wait
+    
+    Costumer () constructors
+
+    Costumer () {guestName, numInParty, waitTime, totalWait,
+             currentCapacity, avgWait) {
+        guestName; 
+        numInParty;
+        waitTime;
+        totalWait; 
+        currentCapacity; 
+        avgWait;
+} // end customer constructor
+    Methods:
+    set/getGuestName 
+    set/getNumInParty
+    getTotalWait
+    getWaitTime
+    getAvgWait
+    Custom toString
+} // end class customer
